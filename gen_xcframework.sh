@@ -10,7 +10,7 @@ set -e
 
 # Variables
 
-FRAMEWORK_NAME="amomessenger"
+FRAMEWORK_NAME="XCFrameworkLibprisma"
 
 TEMP_BUILD_PATH="./build"
 SIMULATOR_ARCHIVE_PATH="${TEMP_BUILD_PATH}/iOS_Simulator.xcarchive"
