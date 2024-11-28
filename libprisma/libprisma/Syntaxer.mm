@@ -198,22 +198,22 @@ Brush *makeBrush(std::string alias, std::string type, SyntaxterTheme * theme, Br
 
 -(NSAttributedString *)syntax:(NSString *)code language: (NSString *)language theme: (SyntaxterTheme *) theme {
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc] init];
-    std::string c_code = code.UTF8String;
-    std::string c_language = language.UTF8String;
-
-    TokenList tokens = _m_highlighter->tokenize(c_code, c_language);
-    for (auto it = tokens.begin(); it != tokens.end(); ++it)
-    {
-        auto& node = *it;
-        Brush *brush;
-        if (node.isSyntax()) {
-            const auto& child = dynamic_cast<const Syntax&>(node);
-            brush = makeBrush(child.alias(), child.type(), theme, nil);
-        } else {
-            brush = makeBrush("", "", theme, nil);
-        }
-        [self paint:node string:string brush:brush theme: theme];
-    }
+//    std::string c_code = code.UTF8String;
+//    std::string c_language = language.UTF8String;
+//
+//    TokenList tokens = _m_highlighter->tokenize(c_code, c_language);
+//    for (auto it = tokens.begin(); it != tokens.end(); ++it)
+//    {
+//        auto& node = *it;
+//        Brush *brush;
+//        if (node.isSyntax()) {
+//            const auto& child = dynamic_cast<const Syntax&>(node);
+//            brush = makeBrush(child.alias(), child.type(), theme, nil);
+//        } else {
+//            brush = makeBrush("", "", theme, nil);
+//        }
+//        [self paint:node string:string brush:brush theme: theme];
+//    }
     return string;
 }
 
