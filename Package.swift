@@ -12,7 +12,7 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(name: "libprisma", url: "https://github.com/purkylin/libprisma/files/14610785/libprisma.zip", checksum: "11bfa012cce3628eb215386a8734978844c8a28f7e31c2c70783adaacba19981")
+        .binaryTarget(name: "libprisma", url: "https://github.com/val11n1/libprisma/archive/refs/heads/main.zip", checksum: "45a2e678487afcacf9ec1e1e8dc0b47817ad59c2c5c42f17d0b86aea080f080e")
     ]
 )
 //
